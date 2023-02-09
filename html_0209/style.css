@@ -1,0 +1,306 @@
+
+/**
+リセットCSS
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+こっから本番
+*/
+
+/**
+headerの設定
+*/
+#icon-Music-Channel img{
+    width:30%;
+    height:30%;
+}
+
+.whiteHeader{
+    background-color: white;
+}
+#titleName{
+    float: left;
+    font-size:20px;
+    text-align: center;
+    line-height: 100px;
+    width: 300px;
+    height: 100px;
+}
+
+.parent{
+    display: flex;
+    background-color:#fff0f5 ;
+    color:black;
+    margin-right:50px;
+}
+ 
+.child {
+    font-size:28px;
+    text-align: right;
+    line-height: 100px;
+    width: 400px;
+    height: 100px;
+   }
+
+.child img{
+    width:190px;
+    height:120px;
+}
+
+/**
+bodyの設定
+*/
+body{
+    background-color:#fff0f5;
+}
+    /**
+    textContainerの設定
+    */
+    .textContainer{
+        display: flex;
+        background-color: white;
+        margin-left:230px;
+        margin-right:400px;
+        border-radius: 20px;/*角の丸み*/
+    }
+    .textContainer h1{
+        text-align: center;
+        font-weight: bold;
+        padding:40px;
+        font-size: 28px;
+        color:black;
+    }
+    .textContainer p{
+        padding-left: 40px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    /**
+    画像に関しての設定
+    */
+
+    /**
+    背景に色を入れたもの
+    */
+    .imgContainer1 img{
+        width: 400px;
+        height: 400px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        padding-left: 210px;
+        padding-right: 205px;
+        background-color: #f0e9d7;
+      }
+      
+      .doublePic{
+          display:flex;
+      }
+
+      /**
+      背景に色を入れない
+      */
+      .imgContainer2 img{
+        width: 300px;
+        height:300px;
+      }
+
+
+      /**
+      boxに関する記述はここ
+      */
+      .titleBoxRed{ 
+        margin-left: 70px;
+        margin-bottom:2px;
+        font-weight: bold;
+        width:100px;
+        color: white;/*文字色*/
+        background: #ffa07a;
+        border: solid 3px #ffa07a;/*線*/
+    }
+    .titleBoxRed p{
+        font-size:18px;
+        padding-left: 25px;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    .titleBoxBlue{ 
+        margin-left: 70px;
+        margin-bottom:2px;
+        font-weight: bold;
+        width:100px;
+        color: white;/*文字色*/
+        background: #00bfff;
+        border: solid 3px #00bfff;/*線*/
+    }
+    .titleBoxBlue p{
+        font-size:18px;
+        padding-left: 25px;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+
+    .circleBox {
+        /* 上 | 右 | 下 | 左 */
+        margin:0px 50px 30px 60px;
+        font-weight: bold;
+        color: black;/*文字色*/
+        background: #FFF;
+        border: solid 3px #ffa07a;/*線*/
+        border-radius: 20px;/*角の丸み*/
+    }
+    .circleBox  li {
+        font-size:18px;
+        margin:20px; 
+        padding-left: 20px;
+        padding-bottom:5px
+    }
+    .circleBox a{
+        color: black;/*文字色*/
+        text-decoration: none;
+    }
+    .circleBox a:hover{
+        color:red;
+    }
+    .circleBox2 {
+        /* 上 | 右 | 下 | 左 */
+        margin:0px 50px 30px 60px;
+        font-weight: bold;
+        color: black;/*文字色*/
+        background: #FFF;
+        border: solid 3px #00bfff ;/*線*/
+        border-radius: 20px;/*角の丸み*/
+    }
+    .circleBox2  li {
+        font-size:18px;
+        margin:20px; 
+        padding-left: 20px;
+        padding-bottom:5px
+    }
+
+    .box{
+        margin: 65px;
+        background: #f4f4f4;
+        border-left: solid 6px#00bfff ;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+    }
+    .box h1{
+        font-size: 30px;
+        text-align:left;
+    }
+
+    /**
+    art1内の文字などについての設定
+    */
+    .art1 h1{
+        font-size:30px;
+        font-weight:bold;
+        margin-left:45px;
+        margin-top:10px;
+        padding:20px;
+    }
+    .art1 h2{
+        font-size:20px;
+        font-weight:normal;
+        margin-left:45px;
+        margin-top:10px;
+        margin-bottom:10px;
+        padding:20px;
+    }
+    .art1 p{
+        font-size:20px;
+        font-weight:normal;
+        margin-left:50px;
+        margin-top:10px;
+        padding:20px;
+    }
+    .art1 li{
+        font-size:20px;
+        font-weight:normal;
+        margin-left:50px;
+        margin-top:10px;
+        padding:20px;
+    }
+
+/**
+    footerの設定
+*/
+.footerStyle{
+    background-color: #ffa07a;
+    margin-top: 20px;
+    padding: 50px;
+}
+.footerStyle ul{
+    display: flex;
+}
+.footerStyle li{
+    margin-left: 15%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+/**
+ aタグの設定
+*/
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+
+/**
+hタグの設定
+*/
+h1{
+    font-size:20px;
+}
+

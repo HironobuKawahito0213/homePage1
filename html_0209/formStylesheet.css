@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+}
+
+.left{
+    background: #fff0f5;
+    padding-left: 15%;
+}
+
+.center{
+    background: white;
+    border-radius: 20px;/*角の丸み*/
+    width:61%;
+}
+
+.right{
+    background: #fff0f5;
+}
+
+.center h1{
+    font-size:30px;
+    text-align: center;
+    margin:20px;
+}
+.form1{
+    text-align:left;
+    font-size:24px;
+    margin:20px;
+}
+
+.space1{
+    height: 500px;
+}
+
+/*お問い合わせのための文*/
+
+
+ul li {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 80px;
+}
