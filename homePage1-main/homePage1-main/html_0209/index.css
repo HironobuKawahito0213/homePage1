@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+}
+
+.left{
+    background: #fff0f5;
+    padding-left: 15%;
+}
+
+.center{
+    background: white;
+    border-radius: 20px;/*角の丸み*/
+    width:61%;
+}
+
+.right{
+    background: #fff0f5;
+}
+
+.center h1{
+    font-size:30px;
+    text-align: center;
+    margin:20px;
+}
+.form1{
+    text-align:left;
+    font-size:24px;
+    margin:20px;
+}
+
+.center p{
+    font-size:20px;
+    text-align: center;
+    margin: 3%;
+}
+#index1{
+    width:31%;
+    height:29%;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left: 32%;
+}
+#index2{
+    width:31%;
+    height:29%;
+    margin-left: 34%;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#index3{
+    width:31%;
+    height:29%;
+    margin-left: 34%;
+    margin-top:20px;
+    margin-bottom:20px;
+}

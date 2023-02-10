@@ -1,0 +1,39 @@
+
+/**
+headerの設定用
+*/
+.parent{
+    display: flex;
+    background-color: cadetblue;
+    color:white;
+}
+#titleName{
+    float: left;
+    font-size:20px;
+    text-align: center;
+    line-height: 100px;
+    width: 300px;
+    height: 100px;
+}
+ 
+.child {
+    font-size:20px;
+    text-align: right;
+    line-height: 100px;
+    width: 400px;
+    height: 100px;
+    right:auto;
+    justify-content: flex-end;
+   }
+
+
+/**
+ aタグの設定
+*/
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
