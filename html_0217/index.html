@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-style.css">
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1″>
+    <title>MUSIC_CHANNNELS</title>
+</head>
+<header>
+    <div class="whiteHeader">
+        <span id="icon-Music-Channel">
+            <a href= "index.html"><img src="./images/musicChannel.png"></a>
+        </span>
+    </div>
+    <div class="parent">
+        <p class="child"><a href="index.html"><img src="images/home.png"></a></p>
+        <p class="child"><a href="about.html"><img src="images/about.png"></a></p>
+        <p class="child"><a href="products.html"><img src="images/products.png"></a></p>
+        <p class="child"><a href="other.html"><img src="images/other.png"></a></p>
+    </div>
+</header>
+
+<body>
+    <script src="jquery-3.6.3.js"></script>
+    <script>
+        $(function () {
+            //背景色入り画像　マウス通過　彩度変化
+            $(".space1 img").on("mouseover", function () {
+                $(".space1 img").css("opacity", 0.7);
+            })
+            $(".space1 img").on("mouseout", function () {
+                $(".space1 img").css("opacity", 1);
+            })
+            //背景色なし画像　マウス通過　彩度変化
+            $(".space2  img").on("mouseover", function () {
+                $(".space2  img").css("opacity", 0.7);
+            })
+            $(".space3  img").on("mouseover", function () {
+                $(".space3 img").css("opacity", 0.7);
+            })
+            $(".space2  img").on("mouseout", function () {
+                $(".space2  img").css("opacity", 1);
+            })
+            $(".space3  img").on("mouseout", function () {
+                $(".space3 img").css("opacity", 1);
+            })
+            //なんかの処理
+        })
+    </script>
+
+    <div class="container">
+        <div class="left">
+        </div>
+        <div class="center">
+            <h1></h1>
+            <div class="space1">
+                <a href="about.html"><img id="index1" src="images/onpu.png"></a>
+            </div>
+            <h1>MUSIC_CHANNNEL<br></h1>
+            <p>皆さんに音楽のすばらしさを提供するサイトです。<br></p>
+            <p>サイト運営者はコチラ。<br></p>
+            <div class="space2">
+                <a href="products.html"><img id="index2" src="images/play.png"></a>
+            </div>
+            <h1>PRODUCTS<br></h1>
+            <p>主なコンテンツはこちらに存在します。<br></p>
+            <p>記事・youtubeなどを主に<br></p>
+            <div class="space3">
+                <a href="other.html"><img id="index3" src="images/headphone.png"></a>
+            </div>
+            <h1>OTHERS<br></h1>
+            <p>お問い合わせなどはこちらへ<br></p>
+            <p>サイト運営者にメッセージを<br></p>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+</body>
+<footer>
+    <div class="footerStyle">
+        <ul>
+            <li>topに戻る</li>
+            <li>nextページに</li>
+        </ul>
+    </div>
+</footer>
+
+</html>

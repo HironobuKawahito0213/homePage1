@@ -1,0 +1,66 @@
+
+/**
+こっから本場
+*/
+.body{
+    background: #fff0f5;
+}
+.container{
+    display: flex;
+    background-color: #fff0f5;
+}
+
+.left{
+    background: #fff0f5;
+    padding-left: 15%;
+}
+
+.center{
+    background: white;
+    border-radius: 20px;/*角の丸み*/
+    width:61%;
+}
+
+.right{
+    background: #fff0f5;
+    width:20%;
+}
+
+.center h1{
+    font-size:30px;
+    text-align: center;
+    margin:20px;
+}
+.form1{
+    text-align:left;
+    font-size:24px;
+    margin:20px;
+}
+.art{
+    background: #fff0f5;
+}
+.background{
+    background:#fff0f5;
+}
+
+
+
+
+
+/**
+    footerの設定
+*/
+
+.footerStyle{
+    background-color: #ffa07a;
+    padding: 50px;
+}
+.footerStyle ul{
+    display: flex;
+}
+.footerStyle li{
+    margin-left: 15%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}

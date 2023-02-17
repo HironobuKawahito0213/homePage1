@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <link rel="stylesheet" href="formStylesheet.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-style.css">
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1″>
+    <title>MUSIC_CHANNNELS</title>
+</head>
+<header>
+    <div class="whiteHeader">
+        <span id="icon-Music-Channel">
+            <a href="index.html"><img src="./images/musicChannel.png"></a>
+        </span>
+    </div>
+    <div class="parent">
+        <p class="child"><a href="index.html"><img src="images/home.png"></a></p>
+        <p class="child"><a href="about.html"><img src="images/about.png"></a></p>
+        <p class="child"><a href="products.html"><img src="images/products.png"></a></p>
+        <p class="child"><a href="other.html"><img src="images/other.png"></a></p>
+    </div>
+</header>
+
+<body>
+    <script src="jquery-3.6.3.js"></script>
+    <script>
+        $(function () {
+            //背景色入り画像　マウス通過　彩度変化
+            $(".imgContainer1 img").on("mouseover", function () {
+                $(".imgContainer1 img").css("opacity", 0.7);
+            })
+            $(".imgContainer1 img").on("mouseout", function () {
+                $(".imgContainer1 img").css("opacity", 1);
+            })
+            //背景色なし画像　マウス通過　彩度変化
+            $(".imgContainer2  #leftPic").on("mouseover", function () {
+                $(".imgContainer2  #leftPic").css("opacity", 0.7);
+            })
+            $(".imgContainer2  #rightPic").on("mouseover", function () {
+                $(".imgContainer2 #rightPic").css("opacity", 0.7);
+            })
+            $(".imgContainer2  #leftPic").on("mouseout", function () {
+                $(".imgContainer2  #leftPic").css("opacity", 1);
+            })
+            $(".imgContainer2  #rightPic").on("mouseout", function () {
+                $(".imgContainer2 #rightPic").css("opacity", 1);
+            })
+            //なんかの処理
+
+        })
+    </script>
+    <div class="container">
+        <div class="left">
+        </div>
+        <div class="center">
+            <h1>お問い合わせフォーム</h1>
+            <div class="table">
+                <form action="">
+                    <table class="contact-table">
+                        <tr>
+                            <th class="contact-item">名前</th>
+                            <td class="contact-body">
+                                <input type="text" name="名前" class="form-text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="contact-item">性別</th>
+                            <td class="contact-body">
+                                <label class="contact-sex">
+                                    <input type="radio" name="性別" />
+                                    <span class="contact-sex-txt">男</span>
+                                </label>
+                                <label class="contact-sex">
+                                    <input type="radio" name="性別" />
+                                    <span class="contact-sex-txt">女</span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="contact-item">メール</th>
+                            <td class="contact-body">
+                                <input type="email" name="メール" class="form-text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="contact-item">電話</th>
+                            <td class="contact-body">
+                                <input type="tel" name="電話" class="form-text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="contact-item">職業</th>
+                            <td class="contact-body">
+                                <select name="職業" class="form-select">
+                                    <option>選択</option>
+                                    <option>学生</option>
+                                    <option>主婦</option>
+                                    <option>会社員</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="contact-item">スキル</th>
+                            <td class="contact-body">
+                                <label class="contact-skill">
+                                    <input type="checkbox" name="スキル" />
+                                    <span class="contact-skill-txt">HTML,CSS</span>
+                                </label>
+                                <label class="contact-skill">
+                                    <input type="checkbox" name="スキル" />
+                                    <span class="contact-skill-txt">JavaScript,jQuery</span>
+                                </label>
+                                <label class="contact-skill">
+                                    <input type="checkbox" name="スキル" />
+                                    <span class="contact-skill-txt">WordPress</span>
+                                </label>
+                                <label class="contact-skill">
+                                    <input type="checkbox" name="スキル" />
+                                    <span class="contact-skill-txt">その他</span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="contact-item"><p>お問い合わせ内容</p></th>
+                            <td class="contact-body">
+                                <textarea name="問い合わせ" class="form-textarea" rows="6" cols="50"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <!-- 後ほど送信ボタンを作成 -->
+                    <input class="contact-submit" type="submit" value="送信" />
+                </form>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+
+    <div class="right">
+    </div>
+    </div>
+</body>
+<footer>
+    <div class="footerStyle">
+        <ul>
+            <li>topに戻る</li>
+            <li>nextページに</li>
+        </ul>
+    </div>
+</footer>
+
+</html>
