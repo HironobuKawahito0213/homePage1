@@ -1,15 +1,12 @@
 package fishing;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class FishList {
 	
 	public static void makeFishList()  {
-		List <String> ls = new ArrayList<String>();
 		
 		Map<String,Integer> fLs = new HashMap<>();
 		
@@ -23,10 +20,15 @@ public class FishList {
 			
 			String s = field.getName();
 			
-			
-			
-			System.out.println(s);
-			fLs.put(s, null);
+			//初期化してなかった。
+			int price  = 0;
+			try {
+				price = (int) field.get(fish);
+			} catch (IllegalArgumentException | IllegalAccessException e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			}
+			fLs.put(s, price);
 		}
 		
 		
