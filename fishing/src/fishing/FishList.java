@@ -5,10 +5,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FishList {
+
+	private Map<String,Integer> mp = new HashMap<>();
 	
-	public static void makeFishList()  {
-		
-		Map<String,Integer> fLs = new HashMap<>();
+	
+	FishList(){
+		makeFishList();
+	}
+	
+	public Map<String, Integer> getMp() {
+		return mp;
+	}
+
+	private void makeFishList()  {
 		
 		Fish fish = new Fish();
 		
@@ -28,10 +37,14 @@ public class FishList {
 				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
-			fLs.put(s, price);
+			mp.put(s, price);
 		}
 		
-		
+	}
+	public void showFishList() {
+		for(Map.Entry<String,Integer> entry:mp.entrySet()){
+			System.out.println(entry.getKey() + " " + entry.getValue());
+		}
 		
 	}
 }

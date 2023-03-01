@@ -8,7 +8,7 @@ public class Fish {
 	final private int ika = 30;
 	final private int hotate = 20;
 	final private int aji = 20;
-	final private int medaka = 3;
+	final private int medaka = 5;
 	final private int gomi = 0;
 	final private int ojisan = -50;
 	
