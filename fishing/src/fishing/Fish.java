@@ -42,5 +42,8 @@ public class Fish {
 	public int getOjisan() {
 		return ojisan;
 	}
-	
+	public void showFish() {
+		int num = ojisan;
+		System.out.println(num);
+	}
 }
