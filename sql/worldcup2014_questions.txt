@@ -1,0 +1,48 @@
+﻿【2014年のサッカーworldcupの情報から】
+
+----------準備----------
+
+http://my.internetacademy.jp/~lesson/02/sm/worldcup2014.zip
+
+※デスクトップにデータを保存する
+
+■ログイン
+cd c:\xampp\mysql\bin
+mysql -u testuser -p
+testpass
+
+
+■データ作成
+show databases;
+create database worldcup2014;
+use worldcup2014;
+
+■情報の取り込み
+source C:\Users\自身のPCに合わせて入力(例：n_koyam)a\Desktop\worldcup2014\worldcup2014.sql
+show tables;
+
+------------------------
+
+
+■課題１（2014年のサッカーworldcupの情報から）
+
+１．playersテーブルから100件に絞って表示する。
+
+２．goalsテーブルから、選手idと選手ごとのゴール数の２つを表示する。
+
+３．goalsテーブルから、選手idと選手ごとのゴール数の２つを表示する。その際、ゴール数の多い順にする。
+
+
+■課題２（2014年のサッカーworldcupの情報から）
+
+１．テーブル名countriesの国のランキングを１つ上げる。
+
+２．テーブル名countriesのベルギーのランキングを1位にする。
+
+３．playersテーブルで、選手のBMIを計算し、BMIの数値が大きい順に表示する。
+
+４．goalsテーブルにplayersテーブル結合して、goalsテーブルに選手名を加えて表示する。
+
+５．goalsテーブルにplayersテーブル結合して、goalsテーブルに選手名を加えて表示し、ゴール数をcount集計する。（選手ごとに表示する）
+
+※上記が難しい方はＤＢ第3回目資料の「外部結合」の次のページの「JOIN(例題)」も併せて練習しましょう。
